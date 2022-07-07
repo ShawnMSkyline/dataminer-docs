@@ -57,7 +57,7 @@ SLProtocol would leak memory each time a parameter of a replicated element was u
 
 #### Problem with SLElement when resolving foreign keys took a long time and the the element debug log level was equal to or higher than 1 [ID_33826]
 
-<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+<!-- Main Release Version 10.0.0 [CU22]/10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When the element debug log level was equal to or higher than 1, an error could occur in SLElement when resolving foreign keys took a long time. 
 

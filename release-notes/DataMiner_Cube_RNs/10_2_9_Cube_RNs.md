@@ -23,6 +23,28 @@ In a trend graph, up to now, a drop-down list in the top-right corner allowed yo
 
 When the card layout is set to "tab layout", you can now close a card tab by clicking it with the middle mouse button.
 
+#### Password box with strength indicator and peek button [ID_33937]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+Password boxes in Cube will now indicate the password strength (common, very weak, weak, good, strong, very strong) based on a scoring algorithm and a dictionary of default and well-known passwords. They will also have a peek button that allows you to temporarily reveal the password you have entered.
+
+These new password boxes can be found in the following locations:
+
+- Cube login screen (peek only)
+- Data Display: parameters of type password (e.g. the password box of a Microsoft Platform element)
+- Edit port settings of an SNMPv3 element
+- System Center > Agents > Add
+- System Center > Database
+- System Center > Users/groups > Add new user... (peek only)
+- System Center > System Settings > Credentials Library
+- System Center > System Settings > LDAP
+- Interactive Automation scripts (`UIBlock` of type "PasswordBox")
+
+> [!NOTE]
+> - If a value received from the server has been automatically entered in a password box, the strength indicator and peek button will not be available until you enter a completely new password.
+> - If the value received from the server is a fixed 8-asterisk-long placeholder instead of an actual password, you will not be able to modify it. You will be forced to replace the entire value.
+
 ## Changes
 
 ### Enhancements
@@ -105,6 +127,13 @@ When an error occurred while configuring a profile parameter of type "discrete",
 
 When you open the *Resources* app, a warning will be shown in the footer when error trace data was found when fetching resource manager data from the server. Up to now, such a warning would incorrectly also be shown when resource manager configuration requests returned error trace data.
 
+#### Alarm Console: Problem when performing a right-click command on two or more alarm groups [ID_33783]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+When you selected two or more alarm groups, and selected *Clear alarm*, *Take ownership*, *Release ownership* or *Add comment* from the right-click menu, the operation would fail.
+
 #### Resources app: Updating a session variable in a Resource Manager component would incorrectly cause that same session variable to be updated in the Occupancy tab of the Resources app [ID_33800]
 
 <!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
@@ -150,3 +179,19 @@ While making a spectrum recording, in some cases, the recording icon would no lo
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When, in Visual Overview, you clicked a shape that executed two Automation scripts, the cursor would incorrectly still be displayed as a wait cursor after the two scripts had already finished.
+
+
+
+
+
+#### CubeLauncher: fix launching a custom version [ID_33958]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+When launching a specific version using the contextmenu, it is always the default version that gets launched (when clicking the button).
+
+If many newer versions are available on the client (more than COMPATIBLE_VERSIONS_TO_DISPLAY=10), the contextmenu no longer lists the version provided by the server, which is the most interesting one.
+
+
+
