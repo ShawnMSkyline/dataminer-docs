@@ -125,6 +125,12 @@ While this process was ongoing, in some rare cases, the Alarm Console would inco
 
 In some cases, an exception could be thrown while the Alarm Console was loading.
 
+#### Alarm Console: Cube could become unresponsive when a large number of alarms were being added and removed in an alarm tab of type 'sliding window' [ID_33870]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When, in an alarm tab of type "sliding window", a large number of alarms were being added and removed, in some cases, DataMiner Cube could become unresponsive.
+
 #### System Center: Element counter on Agents > Status tab would not be set to 0 when removing all elements from a DMA [ID_33885]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->

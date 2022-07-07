@@ -36,6 +36,12 @@ When a version of a DVE protocol with function DVE protocols is deleted from the
 
 When configuring a parameter in a protocol, you can add a `<Message>` element containing a comment to be displayed in a confirmation box when users change that parameter on the user interface. Up to now, this `<Message>` element was only supported by DataMiner Cube. It is now also supported by web applications like Monitoring and Dashboards.
 
+#### DataMiner web apps updated to Angular 13 [ID_33869]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+The DataMiner mobile apps that use Angular (e.g. low code apps, Dashboards, Monitoring, Ticketing, Jobs and Automation) now use Angular 13 instead of Angular 12.
+
 #### GQI: Table columns of type 'decimal' can now also be used when filtering or aggregating data [ID_33927]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
@@ -57,6 +63,12 @@ The migration process will now be executed partition by partition. This greatly 
 When the source database is a Cassandra database, at the end of a migration process, the Migrator tool will now automatically retry to migrate the partitions that could not be migrated the first time. Moreover, when you manually restart a migration with failed partitions, only those failed partitions will be included in the new migration attempt. The migration will no longer have to be redone from scratch.
 
 Also, additional fail-safes have been built in to cope with situations where the target Cassandra database cannot be reached.
+
+#### SLLogCollector: Enhanced processing of SLProtocol memory dumps [ID_33932]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+Because of a number of enhancements, SLLogCollector is now better able to collect SLProtocol memory dumps, especially in cases where there is no reference to an element.
 
 ### Fixes
 
@@ -97,6 +109,12 @@ When the connection was lost, the web services API would incorrectly no longer c
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When you tried to create a booking with a child DVE element linked to a main DVE element in an error state, the child DVE element would not automatically be activated, causing the booking to fail. Moreover, SLNet would not try to activate this child DVE element, causing subsequent bookings needing that same child DVE element to also fail, even if the main element had already recovered from the error state in the meantime.
+
+#### Problem with SLAnalytics when an element or a parameter was deleted [ID_33788]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+When an element or a parameter was deleted, in some rare cases, an error could occur in the SLAnalytics process. 
 
 #### GQI: Columns of type 'decimal' would incorrectly not be treated as columns of type 'numeric' [ID_33792]
 

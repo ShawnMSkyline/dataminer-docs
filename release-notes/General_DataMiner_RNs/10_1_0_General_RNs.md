@@ -27,6 +27,12 @@ In an HTTP session request, the order of the parameters will now always be ident
 
 When a version of a DVE protocol with function DVE protocols is deleted from the system while functions are active, from now on, the function DVE protocol versions associated with those active functions will also be removed from the system.
 
+#### SLLogCollector: Enhanced processing of SLProtocol memory dumps [ID_33932]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+Because of a number of enhancements, SLLogCollector is now better able to collect SLProtocol memory dumps, especially in cases where there is no reference to an element.
+
 ### Fixes
 
 #### Problem with SLProtocol when stopping elements or when testing protocol connections [ID_33407]

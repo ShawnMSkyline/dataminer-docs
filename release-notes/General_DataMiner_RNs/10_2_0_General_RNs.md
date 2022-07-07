@@ -80,6 +80,12 @@ When a version of a DVE protocol with function DVE protocols is deleted from the
 
 Table columns of type "decimal" can now also be used when filtering or aggregating data.
 
+#### SLLogCollector: Enhanced processing of SLProtocol memory dumps [ID_33932]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+Because of a number of enhancements, SLLogCollector is now better able to collect SLProtocol memory dumps, especially in cases where there is no reference to an element.
+
 #### New BPA test 'Verify Cloud DxM Version' [ID_33956]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.8 [CU0] -->
