@@ -180,18 +180,11 @@ While making a spectrum recording, in some cases, the recording icon would no lo
 
 When, in Visual Overview, you clicked a shape that executed two Automation scripts, the cursor would incorrectly still be displayed as a wait cursor after the two scripts had already finished.
 
-
-
-
-
-#### CubeLauncher: fix launching a custom version [ID_33958]
+#### DataMiner Cube start window: Problems when selecting a specific Cube version to connect with [ID_33958]
 
 <!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
 <!-- Not added to 10.3.0 -->
 
-When launching a specific version using the contextmenu, it is always the default version that gets launched (when clicking the button).
+When, in the DataMiner Cube start window, you indicated that you wanted to connect to an agent/cluster using a specific Cube version (by selecting *Connect using* in the right-click menu), the default Cube version would incorrectly be used instead.
 
-If many newer versions are available on the client (more than COMPATIBLE_VERSIONS_TO_DISPLAY=10), the contextmenu no longer lists the version provided by the server, which is the most interesting one.
-
-
-
+Also, if the list of available versions contained more than 10 versions, the version provided by the server would incorrectly no longer be listed.

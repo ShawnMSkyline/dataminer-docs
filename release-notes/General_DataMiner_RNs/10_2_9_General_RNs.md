@@ -217,3 +217,10 @@ When an alarm of one the following types was generated, in some cases, that alar
 - Suggestion Event
 - Error Alarm
 - Notice Alarm
+
+#### SLDataMiner would incorrectly no longer accept 'protocol' as a valid scriptingProcesses option [ID_33970]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+In *DataMiner.xml*, the `scriptingProcesses` option can be set to an integer value, to "[service]" or to "protocol". However, SLDataMiner would incorrectly no longer accept the latter as a valid option.
