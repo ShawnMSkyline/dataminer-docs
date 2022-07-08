@@ -70,3 +70,9 @@ While making a spectrum recording, in some cases, the recording icon would no lo
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When, in Visual Overview, you clicked a shape that executed two Automation scripts, the cursor would incorrectly still be displayed as a wait cursor after the two scripts had already finished.
+
+#### Alarm Console: Column list not shown when hovering over the 'Add/Remove column' menu command [ID_33967]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When you right-clicked a column header in an alarm tab and hovered over the *Add/Remove column* command, in some cases, the column list would incorrectly not be shown if, previously, you had right-clicked the header of the focus column or a header of an action column.

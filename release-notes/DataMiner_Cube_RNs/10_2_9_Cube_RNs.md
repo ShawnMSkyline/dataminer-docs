@@ -53,6 +53,24 @@ A new theme has been added to DataMiner Cube: "Light".
 
 Also, the Apps list now contains links to the Catalog, the Cloud Admin app and custom web apps.
 
+#### Browser callbacks can now open EPM objects via SystemName or SystemType [ID_33963]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+When an embedded web page is displayed in Cube, it is possible to make a callback from the web page into Cube and, for example, open an element, service, view or CPE card.
+
+The existing JavaScript web browser callbacks for browser shapes in Visual Overview have now been extended to allow opening an EPM card in Cube via an object's SystemName or SystemType using the following method:
+
+```txt
+NavigateCPEByName(string systemType, string systemName);
+```
+
+Example in HTML:
+
+```html
+<a href='javascript:window.external.NavigateCPEByName("Region","California");'>Open Region California</a>
+```
+
 ## Changes
 
 ### Enhancements
@@ -196,3 +214,9 @@ When, in Visual Overview, you clicked a shape that executed two Automation scrip
 When, in the DataMiner Cube start window, you indicated that you wanted to connect to an agent/cluster using a specific Cube version (by selecting *Connect using* in the right-click menu), the default Cube version would incorrectly be used instead.
 
 Also, if the list of available versions contained more than 10 versions, the version provided by the server would incorrectly no longer be listed.
+
+#### Alarm Console: Column list not shown when hovering over the 'Add/Remove column' menu command [ID_33967]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When you right-clicked a column header in an alarm tab and hovered over the *Add/Remove column* command, in some cases, the column list would incorrectly not be shown if, previously, you had right-clicked the header of the focus column or a header of an action column.
