@@ -45,6 +45,14 @@ These new password boxes can be found in the following locations:
 > - If a value received from the server has been automatically entered in a password box, the strength indicator and peek button will not be available until you enter a completely new password.
 > - If the value received from the server is a fixed 8-asterisk-long placeholder instead of an actual password, you will not be able to modify it. You will be forced to replace the entire value.
 
+#### New 'Light' theme & new links in the Apps list [ID_33944]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+A new theme has been added to DataMiner Cube: "Light".
+
+Also, the Apps list now contains links to the Catalog, the Cloud Admin app and custom web apps.
+
 ## Changes
 
 ### Enhancements

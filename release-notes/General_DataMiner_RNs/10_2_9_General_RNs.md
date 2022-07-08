@@ -193,12 +193,6 @@ When you replicated an element with SNMPv3 connections, the SNMPv3 credentials o
 Load Element Failed: Error parsing SNMPv3 password for element: <element name>
 ```
 
-#### DataMiner upgrade: VerifyNatsRunning prerequisite could fail due to SLCloudBridge.dll having been renamed [ID_33875]
-
-<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
-
-During a DataMiner upgrade, the *VerifyNatsRunning* prerequisite could fail due to the *SLCloudBridge.dll* file having been renamed to *SLMessageBroker.dll* in DataMiner versions 10.2.0/10.1.5.
-
 #### Certain types of alarms could affect and degrade an SLA [ID_33899]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
