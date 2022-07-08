@@ -117,12 +117,6 @@ Because of a number of enhancements, SLLogCollector is now better able to collec
 
 While collecting log information, SLLogCollector would become unresponsive when the name of the process or the path where the collected files had to be stored contained spaces.
 
-#### Run-time errors due to MessageBrokerReconnectThread problems in SLCloudBridge [ID_33716]
-
-<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
-
-In some cases, run-time errors could occur due to MessageBrokerReconnectThread problems in the SLCloudBridge process.
-
 #### SLProtocol would leak memory leak each time a parameter of a replicated element was updated [ID_33745]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
