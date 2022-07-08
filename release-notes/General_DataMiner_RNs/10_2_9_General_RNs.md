@@ -30,6 +30,12 @@ When a version of a DVE protocol with function DVE protocols is deleted from the
 
 ### DMS web apps
 
+#### Dashboards app / Custom apps - Service Definition component: Text displayed on a particular node of a process automation service definition will now be the value of that node's Label property [ID_33754]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+Up to now, when a Service Definition component displayed a service definition of type "Skyline Process Automation" or "Custom Process Automation", the name of the associated function definition would be displayed on the nodes. From now on, the text displayed on a particular node will be the value of that node's *Label* property. Only when no *Label* property could be found will the name of the associated function definition be displayed instead.
+
 #### Web apps now also support parameter comments configured in Param.Message elements [ID_33784]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
