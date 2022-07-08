@@ -105,14 +105,6 @@ Because of a number of enhancements, SLLogCollector is now better able to collec
 
 ### Fixes
 
-#### Problem with SLProtocol when stopping elements or when testing protocol connections [ID_33407]
-
-<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
-
-When an element was stopped, its core CProtocol object would get cleared but not entirely deleted. This would cause SLProtocol to leak each time an element was started and stopped.
-
-Also, when a protocol connection was tested, the CProtocol object created in SLProtocol for that test would neither get cleared nor deleted when the connection test had finished. In other words, the element would not get unloaded. This would cause SLProtocol to leak each time a protocol connection was tested.
-
 #### SLLogCollector would become unresponsive when the name of the process or the path where the files had to be stored contained spaces [ID_33493]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
