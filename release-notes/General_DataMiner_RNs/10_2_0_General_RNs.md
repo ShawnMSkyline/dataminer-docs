@@ -110,6 +110,12 @@ While collecting log information, SLLogCollector would become unresponsive when 
 
 When a GQI query retrieved booking information, the datetime values would incorrectly not be converted to UTC time.
 
+#### Monitoring app: Trend graph of table column parameter not displayed when table row index contained forward slash [ID_33661]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.8 -->
+
+In the Monitoring app, the trend graph of a table column parameter would not be displayed when the table row index contained a forward slash.
+
 #### SLProtocol would leak memory leak each time a parameter of a replicated element was updated [ID_33745]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
