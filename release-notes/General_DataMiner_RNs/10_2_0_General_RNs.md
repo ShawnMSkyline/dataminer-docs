@@ -116,6 +116,12 @@ When a GQI query retrieved booking information, the datetime values would incorr
 
 SLProtocol would leak memory each time a parameter of a replicated element was updated.
 
+#### Web services API would incorrectly no longer clear a number of its caches when the connection was lost [ID_33764]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When the connection was lost, the web services API would incorrectly no longer clear a number of its caches.
+
 #### Service & Resource Management: Child DVE element would not get activated when the main DVE element was in an error state [ID_33787]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
