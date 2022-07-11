@@ -169,12 +169,11 @@ Due to a problem with the automatic incident tracking algorithm, error messages 
 
 When the element debug log level was equal to or higher than 1, an error could occur in SLElement when resolving foreign keys took a long time. 
 
-#### Dashboards app - Service definition component: Function nodes would incorrectly not display the number of Process Automation tokens in queue or in progress [ID_33848]
+#### Dashboards app - Service definition component: Function nodes not displaying number of Process Automation tokens in queue or in progress [ID_33848]
 
-<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
-<!-- Not added to 10.3.0 -->
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
-When a Process Automation definition was added to a Service definition component, the function nodes would incorrectly not display the number of tokens currently in queue or in progress.
+When a Process Automation definition was added to a *Service definition* component, the function nodes would not display the number of tokens currently in queue or in progress.
 
 #### Web apps: No group row would appear when you selected a single item in a list view [ID_33858]
 

@@ -134,17 +134,41 @@ When you tried to create a booking with a child DVE element linked to a main DVE
 
 Columns of type "decimal" would incorrectly be treated as columns of type "string" instead of columns of type "numeric".
 
+#### Dashboards app: Options displayed in component headers would not be readable when a dark theme was applied [ID_33805]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.8 -->
+
+When a dark theme was applied, options displayed in the header of certain dashboard components (e.g. “Export to CSV”) would not be readable.
+
 #### Dynamic virtual elements: Problem when processing table columns containing foreign keys [ID_33810]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When a table contained multiple foreign keys, invalid foreign key values referring to non-existing rows could prevent those rows from being exported to DVE child elements. This would cause alarms, trend information, subscriptions, etc. to not get updated for specific DVE elements and/or virtual functions.
 
+#### Cassandra Cluster Migrator tool: Problem when migrating a large amount of data [ID_33821]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.8 -->
+
+When the Cassandra Cluster Migrator tool was migrating a large amount of data, in some cases, an out of memory exception could be thrown.
+
 #### Problem with SLElement when resolving foreign keys took a long time and the the element debug log level was equal to or higher than 1 [ID_33826]
 
 <!-- Main Release Version 10.0.0 [CU22]/10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
-When the element debug log level was equal to or higher than 1, an error could occur in SLElement when resolving foreign keys took a long time. 
+When the element debug log level was equal to or higher than 1, an error could occur in SLElement when resolving foreign keys took a long time.
+
+#### Dashboards app - Visual Overview component: Loading bar at the top of the component instead of large loading message on top of the component [ID_33829]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.8 -->
+
+When a Visual Overview component was loading, up to now, a large loading message was displayed on top of the component. From now on, when a Visual Overview component is loading, a loading bar will appear at the top of the component instead.
+
+#### Dashboards app - Service definition component: Function nodes not displaying number of Process Automation tokens in queue or in progress [ID_33848]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When a Process Automation definition was added to a *Service definition* component, the function nodes would not display the number of tokens currently in queue or in progress.
 
 #### SNMPv3 credentials would incorrectly be checked when replicating an element with SNMPv3 connections [ID_33859]
 
