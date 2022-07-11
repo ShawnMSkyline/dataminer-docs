@@ -125,7 +125,7 @@ SLProtocol would leak memory each time a parameter of a replicated element was u
 
 #### Web services API would incorrectly no longer clear a number of its caches when the connection was lost [ID_33764]
 
-<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When the connection was lost, the web services API would incorrectly no longer clear a number of its caches.
 
