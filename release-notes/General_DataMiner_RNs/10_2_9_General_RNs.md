@@ -140,6 +140,18 @@ When the source database is a Cassandra database, at the end of a migration proc
 
 Also, additional fail-safes have been built in to cope with situations where the target Cassandra database cannot be reached.
 
+#### Serial connections: Hostname resolution enhancements [ID_33702]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When a serial connection was configured with a hostname instead of an IP address, up to now, the hostname would be resolved when the port was initialized. When the hostname suddenly pointed to a different IP address, an element restart or a dynamic IP address change was needed for the serial connection to be aware of that change.
+
+This has now been changed:
+
+- In case of a TCP-oriented serial connection (serial SSL/TLS, SSH and serial TCP), the hostname will be resolved upon every connect.
+
+- In case of a UDP-oriented serial connection (serial UDP), the hostname will be resolved prior to every send.
+
 #### SLLogCollector: Enhanced processing of SLProtocol memory dumps [ID_33932]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
@@ -228,6 +240,12 @@ When you replicated an element with SNMPv3 connections, the SNMPv3 credentials o
 ```txt
 Load Element Failed: Error parsing SNMPv3 password for element: <element name>
 ```
+
+#### SLProtocol could leak memory when the NT_UPDATE_PORTS_XML command was sent [ID_33891]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+In some cases, the SLProtocol process could leak memory when the NT_UPDATE_PORTS_XML command was sent.
 
 #### Certain types of alarms could affect and degrade an SLA [ID_33899]
 

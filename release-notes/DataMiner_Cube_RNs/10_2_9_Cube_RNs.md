@@ -218,6 +218,12 @@ While making a spectrum recording, in some cases, the recording icon would no lo
 
 When, in Visual Overview, you clicked a shape that executed two Automation scripts, the cursor would incorrectly still be displayed as a wait cursor after the two scripts had already finished.
 
+#### Spectrum analysis: Maximum, minimum and average trace would disappear after skipping backward when playing a spectrum recording [ID_33942]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When you play a spectrum recording, you can pause the playback and use controls to skip forward or backward. In some cases, after skipping backward, the maximum, minimum and average trace would incorrectly disappear.
+
 #### DataMiner Cube start window: Problems when selecting a specific Cube version to connect with [ID_33958]
 
 <!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->

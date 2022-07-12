@@ -71,6 +71,12 @@ While making a spectrum recording, in some cases, the recording icon would no lo
 
 When, in Visual Overview, you clicked a shape that executed two Automation scripts, the cursor would incorrectly still be displayed as a wait cursor after the two scripts had already finished.
 
+#### Spectrum analysis: Maximum, minimum and average trace would disappear after skipping backward when playing a spectrum recording [ID_33942]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When you play a spectrum recording, you can pause the playback and use controls to skip forward or backward. In some cases, after skipping backward, the maximum, minimum and average trace would incorrectly disappear.
+
 #### Alarm Console: Column list not shown when hovering over the 'Add/Remove column' menu command [ID_33967]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
