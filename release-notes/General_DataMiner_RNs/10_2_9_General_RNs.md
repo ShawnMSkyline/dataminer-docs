@@ -28,6 +28,24 @@ In an HTTP session request, the order of the parameters will now always be ident
 
 When a version of a DVE protocol with function DVE protocols is deleted from the system while functions are active, from now on, the function DVE protocol versions associated with those active functions will also be removed from the system.
 
+### Security
+
+#### Azure Active Directory: Secret expiry notices/errors [ID_33916]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+When Azure Active Directory is used as an identity provider, DataMiner Cube will now show
+
+- a notice when the secret will expire in less than a week, and
+- an error when the secret has expired.
+
+Also, more detailed entries will now be added to the logs when setup errors have been detected (missing permissions, missing configurations, expired secrets, etc.).
+
+> [!IMPORTANT]
+> Note that, for this enhancement to work, the following changes have to be made to the Azure configuration and the *DataMiner.xml* file.
+> 1. In Azure, add the API permission *Application.Read.All*.
+> 1. Copy the Azure app object ID (*Azure AD > App registrations > [your application] > Object ID*) and, in *DataMiner.xml*, add it to the *objectId* attribute of the *AzureAD* element.
+
 ### DMS web apps
 
 #### Dashboards app / Custom apps - Service Definition component: Text displayed on a particular node of a process automation service definition will now be the value of that node's Label property [ID_33754]
@@ -47,6 +65,25 @@ When configuring a parameter in a protocol, you can add a `<Message>` element co
 <!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
 
 The DataMiner mobile apps that use Angular (e.g. low code apps, Dashboards, Monitoring, Ticketing, Jobs and Automation) now use Angular 13 instead of Angular 12.
+
+#### Dashboards app - GQI: 'Line & area chart' component is now able to visualize GQI query results as a single line [ID_33879]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+The *Line & area chart* component is now able to visualize GQI query results as a single line.
+
+1. Add GQI query data to the chart component.
+
+1. In the component settings tab:
+
+    1. Select the query.
+    1. Select the X axis column.
+    1. Select the Y axis column.
+
+1. In the component layout, adapt the style of the chart.
+
+> [!NOTE]
+> If you want the component to show a classic trend chart, make sure the query result is sorted by the X axis column.
 
 #### GQI: Table columns of type 'decimal' can now also be used when filtering or aggregating data [ID_33927]
 
@@ -203,9 +240,21 @@ When an alarm of one the following types was generated, in some cases, that alar
 - Error Alarm
 - Notice Alarm
 
+#### Azure Active Directory: Domain users who were only a member of a domain group could be deleted during an LDAP synchronization [ID_33916]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+When using Azure Active Directory as an identity provider, up to now, during an LDAP synchronization, all domain users who were only a member of a domain group would incorrectly be deleted when the Azure AD client secret had expired.
+
 #### SLDataMiner would incorrectly no longer accept 'protocol' as a valid scriptingProcesses option [ID_33970]
 
 <!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
 <!-- Not added to 10.3.0 -->
 
 In *DataMiner.xml*, the `scriptingProcesses` option can be set to an integer value, to "[service]" or to "protocol". However, SLDataMiner would incorrectly no longer accept the latter as a valid option.
+
+#### DataMiner Object Model: FieldValues would not get concatenated correctly [ID_33989]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+When a name concatenation for a DomInstance had been defined in either the ModuleSettings or the DomDefinition, in some cases, the FieldValues would not get concatenated correctly.
