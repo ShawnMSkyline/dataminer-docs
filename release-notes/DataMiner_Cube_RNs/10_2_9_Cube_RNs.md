@@ -11,6 +11,18 @@ uid: 10_2_9_Cube_RNs
 
 ## Other new features
 
+#### Alarm Console - Incident tracking: Some types of alarms can now be manually added to incidents even when they do not contain any focus data [ID_33771] [ID_33803]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+Up to now, alarms that did not contain any focus information were not allowed to be the base alarm of an incident. From now on, alarms that do not contain any focus data can be manually added to an incident, provided they are not one of the following types of alarms:
+
+- correlation alarms
+- clearable alarms
+- information events
+- suggestion events
+- other incidents
+
 #### Trending: Prediction type selection has now moved to the context menu [ID_33861]
 
 <!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
