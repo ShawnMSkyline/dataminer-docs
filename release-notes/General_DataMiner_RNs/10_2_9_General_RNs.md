@@ -277,8 +277,8 @@ In *DataMiner.xml*, the `scriptingProcesses` option can be set to an integer val
 
 When a name concatenation for a DomInstance had been defined in either the ModuleSettings or the DomDefinition, in some cases, the FieldValues would not get concatenated correctly.
 
-#### Elasticsearch: Closed alarms were incorrectly not migrated to the dms-alarms index when the associated element had been migrated from one DMA to another [ID_34020]
+#### Elasticsearch: Closed alarms were incorrectly not migrated to the dms-alarms index when the associated element had been migrated from another DMS [ID_34020]
 
 <!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
 
-When, on a system with an Elasticsearch database, an alarm was closed, that alarm would incorrectly not get moved from the dms-Activealarms index to the dms-alarms index when the associated element had been migrated from one DataMiner Agent to another (i.e. when the element’s HostingAgentID was not equal to its DataMinerID).
+When, on a system with an Elasticsearch database, an alarm was closed, that alarm would incorrectly not get moved from the dms-Activealarms index to the dms-alarms index when the associated element had been migrated from another DMS.
