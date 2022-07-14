@@ -56,6 +56,12 @@ Up to now, each time a state component linked to a GQI query received an update,
 
 Also, when a query error occur, from now on, the actual error will be displayed instead of "No data".
 
+#### GQI: Enhanced performance when running a GQI query with a filter applied to it [ID_33664]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.8 -->
+
+Because of a number of enhancements, overall performance has improved when running a GQI query with a filter applied to it.
+
 #### Serial connections: Hostname resolution enhancements [ID_33702]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
@@ -163,6 +169,12 @@ When a dark theme was applied, options displayed in the header of certain dashbo
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When a table contained multiple foreign keys, invalid foreign key values referring to non-existing rows could prevent those rows from being exported to DVE child elements. This would cause alarms, trend information, subscriptions, etc. to not get updated for specific DVE elements and/or virtual functions.
+
+#### Web apps: Visio files would not get rendered correctly [ID_33812]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+In some rare cases, Visio files would not get rendered correctly in web apps (e.g. Dashboards).
 
 #### Cassandra Cluster Migrator tool: Problem when migrating a large amount of data [ID_33821]
 

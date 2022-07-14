@@ -218,6 +218,14 @@ While making a spectrum recording, in some cases, the recording icon would no lo
 
 When, in Visual Overview, you clicked a shape that executed two Automation scripts, the cursor would incorrectly still be displayed as a wait cursor after the two scripts had already finished.
 
+#### Problems when exporting tables with an IncludedPids option or with a ClientSideRowFilter [ID_33934]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+In some cases, tables that had the *IncludedPids* option defined would have their data exported to a CSV file incorrectly.
+
+Also, when a table to which a ClientSideRowFilter was applied was exported to a CSV file, up to now, that filter would not be taken into account.
+
 #### Spectrum analysis: Maximum, minimum and average trace would disappear after skipping backward when playing a spectrum recording [ID_33942]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->

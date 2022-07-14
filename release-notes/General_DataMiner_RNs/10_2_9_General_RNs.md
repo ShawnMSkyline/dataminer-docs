@@ -152,6 +152,12 @@ This has now been changed:
 
 - In case of a UDP-oriented serial connection (serial UDP), the hostname will be resolved prior to every send.
 
+#### QA Device Simulator: Enhanced performance [ID_33761]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+Because of a number of enhancements, overall performance of the QA Device Simulator tool has improved.
+
 #### SLLogCollector: Enhanced processing of SLProtocol memory dumps [ID_33932]
 
 <!-- Main Release Version 10.0.0 [CU22]/10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
@@ -201,6 +207,12 @@ Columns of type "decimal" would incorrectly be treated as columns of type "strin
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When a table contained multiple foreign keys, invalid foreign key values referring to non-existing rows could prevent those rows from being exported to DVE child elements. This would cause alarms, trend information, subscriptions, etc. to not get updated for specific DVE elements and/or virtual functions.
+
+#### Web apps: Visio files would not get rendered correctly [ID_33812]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+In some rare cases, Visio files would not get rendered correctly in web apps (e.g. Dashboards).
 
 #### SLAnalytics: Error messages could get added to the log file due to a problem with the automatic incident tracking algorithm [ID_33820]
 
@@ -257,6 +269,12 @@ When an alarm of one the following types was generated, in some cases, that alar
 - Suggestion Event
 - Error Alarm
 - Notice Alarm
+
+#### SLSNMPManager: StackOverflow exception while trying to resolve the next Request ID [ID_33901]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+In some cases, SLSNMPManager could throw a StackOverflow exception while trying to resolve the next Request ID.
 
 #### Azure Active Directory: Domain users who were only a member of a domain group could be deleted during an LDAP synchronization [ID_33916]
 
