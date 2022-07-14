@@ -226,3 +226,9 @@ When an alarm of one the following types was generated, in some cases, that alar
 - Suggestion Event
 - Error Alarm
 - Notice Alarm
+
+#### SLSNMPManager: StackOverflow exception while trying to resolve the next Request ID [ID_33901]
+
+<!-- Main Release Version 10.0.0 [CU22]/10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+In some cases, SLSNMPManager could throw a StackOverflow exception while trying to resolve the next Request ID.
