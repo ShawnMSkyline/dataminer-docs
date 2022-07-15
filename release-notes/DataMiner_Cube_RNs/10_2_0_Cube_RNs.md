@@ -71,6 +71,16 @@ While making a spectrum recording, in some cases, the recording icon would no lo
 
 When, in Visual Overview, you clicked a shape that executed two Automation scripts, the cursor would incorrectly still be displayed as a wait cursor after the two scripts had already finished.
 
+#### Spectrum analysis: Issues when playing a spectrum recording [ID_33918]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When a spectrum recording was being played, the following issues could occur:
+
+- The *Forward* and *Backward* buttons would not work after starting and pausing the recording.
+- When you adapted the speed of the recording, the new speed would incorrectly only be applied to the next frame and not to the current frame. 
+- When the recording was being played, the slider could incorrectly not be used.
+
 #### Problems when exporting tables with an IncludedPids option or with a ClientSideRowFilter [ID_33934]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
@@ -90,3 +100,9 @@ When you play a spectrum recording, you can pause the playback and use controls 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When you right-clicked a column header in an alarm tab and hovered over the *Add/Remove column* command, in some cases, the column list would incorrectly not be shown if, previously, you had right-clicked the header of the focus column or a header of an action column.
+
+#### Data Display : Update of parameter unit would not be reflected in the UI when the element card was open [ID_34007]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When an element card was open on the DATA page, and a parameter on that page had its unit changed (e.g. via an Automation script), that change would incorrectly not be reflected in the UI. To see the new unit, you had to close the element card and re-open it.
