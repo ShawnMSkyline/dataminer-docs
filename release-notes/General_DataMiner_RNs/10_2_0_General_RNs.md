@@ -104,6 +104,12 @@ Table columns of type "decimal" can now also be used when filtering or aggregati
 
 Because of a number of enhancements, SLLogCollector is now better able to collect SLProtocol memory dumps, especially in cases where there is no reference to an element.
 
+#### SLSNMPManager: Enhanced performance [ID_33940]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+Because of a number of enhancements, overall performance of the SLSNMPManager process has improved.
+
 #### New BPA test 'Verify Cloud DxM Version' [ID_33956]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.8 [CU0] -->

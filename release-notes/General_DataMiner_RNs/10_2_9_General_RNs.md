@@ -166,7 +166,7 @@ Because of a number of enhancements, SLLogCollector is now better able to collec
 
 #### SLSNMPManager: Enhanced performance [ID_33940]
 
-<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 Because of a number of enhancements, overall performance of the SLSNMPManager process has improved.
 
