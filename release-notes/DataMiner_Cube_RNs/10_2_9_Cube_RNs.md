@@ -246,3 +246,14 @@ Also, if the list of available versions contained more than 10 versions, the ver
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When you right-clicked a column header in an alarm tab and hovered over the *Add/Remove column* command, in some cases, the column list would incorrectly not be shown if, previously, you had right-clicked the header of the focus column or a header of an action column.
+
+#### Problem when the Cube starter window software tried to download a DataMiner Cube for a DataMiner Agent v10.0.0 [ID_34009]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+When the Cube starter window software tried to download a DataMiner Cube for a DataMiner Agent v10.0.0, the following error message would be displayed:
+
+```txt
+Something went wrong: Error downloading ClickOnce version: Error downloading manifest file from uri ...
+```

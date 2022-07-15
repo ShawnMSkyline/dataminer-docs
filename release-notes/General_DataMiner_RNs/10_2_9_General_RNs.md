@@ -164,6 +164,12 @@ Because of a number of enhancements, overall performance of the QA Device Simula
 
 Because of a number of enhancements, SLLogCollector is now better able to collect SLProtocol memory dumps, especially in cases where there is no reference to an element.
 
+#### SLSNMPManager: Enhanced performance [ID_33940]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+Because of a number of enhancements, overall performance of the SLSNMPManager process has improved.
+
 ### Fixes
 
 #### SLLogCollector would become unresponsive when the name of the process or the path where the files had to be stored contained spaces [ID_33493]
@@ -294,6 +300,22 @@ In *DataMiner.xml*, the `scriptingProcesses` option can be set to an integer val
 <!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
 
 When a name concatenation for a DomInstance had been defined in either the ModuleSettings or the DomDefinition, in some cases, the FieldValues would not get concatenated correctly.
+
+#### Dashboards app: Dashboards with components containing a time-related setting would no longer load [ID_34017]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+When a dashboard created in a DataMiner version prior to v10.2.9 had at least one of the following components that contained a time-related setting it would no longer load.
+
+- Alarm list
+- Bar chart
+- Pivot table
+- Resource capacity (line chart)
+- Time range feed
+- Trend graph
+- Trend statistics
+- Scheduler
 
 #### Elasticsearch: Closed alarms were incorrectly not migrated to the dms-alarms index when the associated element had been migrated from another DMS [ID_34020]
 
