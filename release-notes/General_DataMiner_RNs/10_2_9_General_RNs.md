@@ -369,6 +369,12 @@ During a DataMiner upgrade, the upgrade action *DeletePreRN28047CustomDataTempla
 
 When you hover over a data table component (e.g. a GQI table), a search box will appear in the bottom-right corner. In some cases, the filter specified in that search box would incorrectly not be re-applied after a data refresh.
 
+#### Problem with SLSNMPManager when an SNMP Get or Set was put on the queue while the element in question was being stopped [ID_34038]
+
+<!-- Main Release Version 10.0.0 [CU22]/10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+In some rare cases, an error could occur in the SLSNMPManager process due to an SNMP Get or Set having been put on the queue while the element in question was being stopped.
+
 #### GQI: No longer possible to select another row after collapsing a group containing a selected row [ID_34042]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
