@@ -17,6 +17,16 @@ uid: 10_1_0_Cube_RNs
 
 From now on, the time of history sets will always be converted to the local time zone.
 
+#### Alarm Console: A run-time error will now appear when the Resource Manager failed to initialize [ID_34024]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+From now on, the following run-time error will appear in the Alarm Console when the Resource Manager failed to initialized.
+
+```txt
+An unexpected exception has occurred while initializing Resource Manager. Please check the SLResourceManager logging for more information.
+```
+
 ### Fixes
 
 #### Trending: Creation, update and deletion of a trend pattern would not be communicated to the other DataMiner Agents in the DMS [ID_33624]

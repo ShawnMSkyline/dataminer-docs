@@ -45,6 +45,12 @@ When a version of a DVE protocol with function DVE protocols is deleted from the
 
 Because of a number of enhancements, SLLogCollector is now better able to collect SLProtocol memory dumps, especially in cases where there is no reference to an element.
 
+#### Enhanced error handling in case QActions fail due to a problem with SLScripting [ID_34010]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When an error occurs in SLScripting, from now on, a new SLScripting instance will be started and all QActions will be reloaded.
+
 ### Fixes
 
 #### SLLogCollector would become unresponsive when the name of the process or the path where the files had to be stored contained spaces [ID_33493]

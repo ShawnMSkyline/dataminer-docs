@@ -120,6 +120,12 @@ It is available from DataMiner 10.2.8 and 10.2.0 [CU6] onwards. You can run it i
 
 For more information, see [DataMiner Dojo](https://community.dataminer.services/documentation/verify-cloud-dxm-version/).
 
+#### Enhanced error handling in case QActions fail due to a problem with SLScripting [ID_34010]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When an error occurs in SLScripting, from now on, a new SLScripting instance will be started and all QActions will be reloaded.
+
 ### Fixes
 
 #### SLLogCollector would become unresponsive when the name of the process or the path where the files had to be stored contained spaces [ID_33493]
@@ -244,3 +250,9 @@ In some cases, SLSNMPManager could throw a StackOverflow exception while trying 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 During a DataMiner upgrade, the upgrade action *DeletePreRN28047CustomDataTemplates* would fail when Elasticsearch required authentication.
+
+#### GQI: No longer possible to select another row after collapsing a group containing a selected row [ID_34042]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When, in a GQI table, you collapsed a group that contained a selected row, it was no longer possible to select another row.

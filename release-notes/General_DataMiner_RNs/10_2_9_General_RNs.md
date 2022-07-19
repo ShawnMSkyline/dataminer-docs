@@ -170,6 +170,12 @@ Because of a number of enhancements, SLLogCollector is now better able to collec
 
 Because of a number of enhancements, overall performance of the SLSNMPManager process has improved.
 
+#### Enhanced error handling in case QActions fail due to a problem with SLScripting [ID_34010]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When an error occurs in SLScripting, from now on, a new SLScripting instance will be started and all QActions will be reloaded.
+
 ### Fixes
 
 #### SLLogCollector would become unresponsive when the name of the process or the path where the files had to be stored contained spaces [ID_33493]
@@ -328,3 +334,9 @@ When, on a system with an Elasticsearch database, an alarm was closed, that alar
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 During a DataMiner upgrade, the upgrade action *DeletePreRN28047CustomDataTemplates* would fail when Elasticsearch required authentication.
+
+#### GQI: No longer possible to select another row after collapsing a group containing a selected row [ID_34042]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When, in a GQI table, you collapsed a group that contained a selected row, it was no longer possible to select another row.
