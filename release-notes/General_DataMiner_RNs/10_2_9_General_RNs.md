@@ -362,6 +362,13 @@ When, on a system with an Elasticsearch database, an alarm was closed, that alar
 
 During a DataMiner upgrade, the upgrade action *DeletePreRN28047CustomDataTemplates* would fail when Elasticsearch required authentication.
 
+#### Web apps - Data table component: Filter specified in search box would incorrectly not be re-applied after a data refresh [ID_33385]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+When you hover over a data table component (e.g. a GQI table), a search box will appear in the bottom-right corner. In some cases, the filter specified in that search box would incorrectly not be re-applied after a data refresh.
+
 #### GQI: No longer possible to select another row after collapsing a group containing a selected row [ID_34042]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
