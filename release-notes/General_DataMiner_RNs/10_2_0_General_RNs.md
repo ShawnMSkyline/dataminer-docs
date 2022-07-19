@@ -126,6 +126,18 @@ For more information, see [DataMiner Dojo](https://community.dataminer.services/
 
 When an error occurs in SLScripting, from now on, a new SLScripting instance will be started and all QActions will be reloaded.
 
+#### Parameter changes will now only be pushed from SLProtocol to SLElement when needed [ID_34047]
+
+<!-- Main Release Version 10.0.0 [CU22]/10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+Up to now, parameter changes would always be pushed from SLProtocol to SLElement. From now, those changes will only be pushed from SLProtocol to SLElement when needed.
+
+#### Size of the WebSocket messages sent from SLPort to SLProtocol will now be limited to 1024 packets [ID_34049]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+In order to prevent SLPort from running out of memory, from now on, the size of the WebSocket messages sent from SLPort to SLProtocol will be limited to 1024 packets.
+
 ### Fixes
 
 #### SLLogCollector would become unresponsive when the name of the process or the path where the files had to be stored contained spaces [ID_33493]
@@ -142,7 +154,7 @@ When a GQI query retrieved booking information, the datetime values would incorr
 
 #### Monitoring app: Trend graph of table column parameter not displayed when table row index contained forward slash [ID_33661]
 
-<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.8 -->
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.8 -->
 
 In the Monitoring app, the trend graph of a table column parameter would not be displayed when the table row index contained a forward slash.
 

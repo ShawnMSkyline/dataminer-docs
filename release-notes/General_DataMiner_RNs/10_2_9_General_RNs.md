@@ -97,6 +97,14 @@ Table columns of type "decimal" can now also be used when filtering or aggregati
 
 Up to now, when all GQI data was requested, the page size would always be set to 50. From now on, the page size will be set to a number between 50 and 1000, based on the amount of columns that are retrieved (max. 3000 cells).
 
+#### Dashboards app: Parameter tables can now expose index values & Edit panel now allows selecting a specific protocol version [ID_33841]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+Up to now, a parameter table was only able to expose indices as part of a parameter value. From now on, a parameter table will also be able to expose indices as separate values.
+
+Also, the edit panel will now allow users to select a specific protocol version.
+
 ### DMS Service & Resource Management
 
 ##### BREAKING CHANGE: Removing a Resource or ResourcePool object will now always require a valid ID [ID_33836]
@@ -176,6 +184,25 @@ Because of a number of enhancements, overall performance of the SLSNMPManager pr
 
 When an error occurs in SLScripting, from now on, a new SLScripting instance will be started and all QActions will be reloaded.
 
+#### Behavioral anomaly detection: Enhancements [ID_34045]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+A number of enhancements have been made to the algorithm that is used to determine whether a change point is an anomaly.
+
+#### Parameter changes will now only be pushed from SLProtocol to SLElement when needed [ID_34047]
+
+<!-- Main Release Version 10.0.0 [CU22]/10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+Up to now, parameter changes would always be pushed from SLProtocol to SLElement. From now, those changes will only be pushed from SLProtocol to SLElement when needed.
+
+#### Size of the WebSocket messages sent from SLPort to SLProtocol will now be limited to 1024 packets [ID_34049]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+In order to prevent SLPort from running out of memory, from now on, the size of the WebSocket messages sent from SLPort to SLProtocol will be limited to 1024 packets.
+
 ### Fixes
 
 #### SLLogCollector would become unresponsive when the name of the process or the path where the files had to be stored contained spaces [ID_33493]
@@ -214,7 +241,7 @@ When an element or a parameter was deleted, in some rare cases, an error could o
 
 Columns of type "decimal" would incorrectly be treated as columns of type "string" instead of columns of type "numeric".
 
-### Dynamic virtual elements: Problem when processing table columns containing foreign keys [ID_33810]
+#### Dynamic virtual elements: Problem when processing table columns containing foreign keys [ID_33810]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
@@ -340,3 +367,10 @@ During a DataMiner upgrade, the upgrade action *DeletePreRN28047CustomDataTempla
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When, in a GQI table, you collapsed a group that contained a selected row, it was no longer possible to select another row.
+
+#### GQI: Problem when filtering or aggregating data by custom properties [ID_34058]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+In some cases, it would no longer be possible to build a GQI query that filtered or aggregated data by custom properties.
