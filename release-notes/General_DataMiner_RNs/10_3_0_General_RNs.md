@@ -4,6 +4,8 @@ uid: 10_3_0_General_RNs
 
 # DataMiner 10.3.0 release notes
 
+- 33665 moved from 10.3.0 to 10.2.0 CU6
+
 > [!IMPORTANT]
 > We are still working on this release. Some release notes may still be modified or moved to a later release. Check back soon for updates!
 

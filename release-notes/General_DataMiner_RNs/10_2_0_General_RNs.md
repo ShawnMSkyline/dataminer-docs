@@ -158,6 +158,12 @@ When a GQI query retrieved booking information, the datetime values would incorr
 
 In the Monitoring app, the trend graph of a table column parameter would not be displayed when the table row index contained a forward slash.
 
+#### Dashboards app: No longer possible to select a built-in theme as default theme [ID_33665]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.8 -->
+
+In the Dashboards app, it would no longer be possible to select a built-in dashboard theme as default theme.
+
 #### SLProtocol would leak memory leak each time a parameter of a replicated element was updated [ID_33745]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
