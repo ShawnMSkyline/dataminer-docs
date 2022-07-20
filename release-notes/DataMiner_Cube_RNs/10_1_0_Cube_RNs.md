@@ -41,6 +41,12 @@ When you created, updated or deleted a tag, up to now, this would incorrectly no
 
 From DataMiner 10.0.13 onwards, you can activate alarm monitoring of trend patterns, so that a "suggestion event" type alarm is triggered whenever a specific pattern is detected. In case of dynamic virtual elements, in some cases, no "suggestion event" type alarm would be triggered.
 
+#### Element card - REPORTS page: Masking and unmasking would not be shown correctly in the different graphs [ID_33832]
+
+<!-- Main Release Version 10.1.0 [CU18] - Feature Release Version TBD -->
+
+On the REPORTS page of an element card, masking and unmasking (i.e. state changes to "masked" and "unmasked") would not be shown correctly in the different graphs.
+
 #### Alarm Console would incorrectly keep loading while the tickets linked to the alarms were being loaded [ID_33847]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
