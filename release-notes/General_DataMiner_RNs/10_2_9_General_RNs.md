@@ -383,7 +383,6 @@ When, in a GQI table, you collapsed a group that contained a selected row, it wa
 
 #### GQI: Problem when filtering or aggregating data by custom properties [ID_34058]
 
-<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
-<!-- Not added to 10.3.0 -->
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 In some cases, it would no longer be possible to build a GQI query that filtered or aggregated data by custom properties.
