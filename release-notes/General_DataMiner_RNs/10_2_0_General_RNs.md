@@ -147,6 +147,12 @@ Up to now, parameter changes would always be pushed from SLProtocol to SLElement
 
 In order to prevent SLPort from running out of memory, from now on, the size of the WebSocket messages sent from SLPort to SLProtocol will be limited to 1024 packets.
 
+#### GQI: Properties marked as "read only" will now also be available [ID_34052]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When creating GQI queries, custom view, element, service and alarm properties that are marked as "read only" will now also be available.
+
 ### Fixes
 
 #### SLLogCollector would become unresponsive when the name of the process or the path where the files had to be stored contained spaces [ID_33493]

@@ -22,6 +22,11 @@ uid: 10_3_0_General_RNs
 
 ### Enhancements
 
+#### Service & Resource Management: Enhancements made to ResourceManagerHelper [ID_33993]
+
+A number of enhancements have been made to the ResourceManagerHelper class.
+
+For example, from now on, an ArgumentNullException will be thrown when a NULL argument is provided. Also, when a collection with one or more NULL objects is provided, those objects will be ignored.
 
 ### Fixes
 

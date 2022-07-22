@@ -178,6 +178,12 @@ Because of a number of enhancements, SLLogCollector is now better able to collec
 
 Because of a number of enhancements, overall performance of the SLSNMPManager process has improved.
 
+#### Service & Resource Management: Enhancements made to ResourceManagerHelper [ID_33993]
+
+A number of enhancements have been made to the ResourceManagerHelper class.
+
+For example, from now on, an ArgumentNullException will be thrown when a NULL argument is provided. Also, when a collection with one or more NULL objects is provided, those objects will be ignored.
+
 #### Enhanced error handling in case QActions fail due to a problem with SLScripting [ID_34010]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
@@ -202,6 +208,12 @@ Up to now, parameter changes would always be pushed from SLProtocol to SLElement
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 In order to prevent SLPort from running out of memory, from now on, the size of the WebSocket messages sent from SLPort to SLProtocol will be limited to 1024 packets.
+
+#### GQI: Properties marked as "read only" will now also be available [ID_34052]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When creating GQI queries, custom view, element, service and alarm properties that are marked as "read only" will now also be available.
 
 ### Fixes
 
