@@ -99,7 +99,7 @@ Up to now, when all GQI data was requested, the page size would always be set to
 
 #### Dashboards app: Parameter tables can now expose index values & Edit panel now allows selecting a specific protocol version [ID_33841]
 
-<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 Up to now, a parameter table was only able to expose indices as part of a parameter value. From now on, a parameter table will also be able to expose indices as separate values.
 

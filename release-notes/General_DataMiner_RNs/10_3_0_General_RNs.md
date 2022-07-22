@@ -18,14 +18,6 @@ uid: 10_3_0_General_RNs
 
 ### DMS Web apps
 
-#### Dashboards app: Parameter tables can now expose index values & Edit panel now allows selecting a specific protocol version [ID_33841]
-
-<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
-
-Up to now, a parameter table was only able to expose indices as part of a parameter value. From now on, a parameter table will also be able to expose indices as separate values.
-
-Also, the edit panel will now allow users to select a specific protocol version.
-
 ## Changes
 
 ### Enhancements

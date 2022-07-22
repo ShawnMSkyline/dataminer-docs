@@ -92,6 +92,15 @@ In an HTTP session request, the order of the parameters will now always be ident
 
 When a version of a DVE protocol with function DVE protocols is deleted from the system while functions are active, from now on, the function DVE protocol versions associated with those active functions will also be removed from the system.
 
+#### Dashboards app: Parameter tables can now expose index values & Edit panel now allows selecting a specific protocol version [ID_33841]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+Up to now, a parameter table was only able to expose indices as part of a parameter value. From now on, a parameter table will also be able to expose indices as separate values.
+
+Also, the edit panel will now allow users to select a specific protocol version.
+
+
 #### GQI: Table columns of type 'decimal' can now also be used when filtering or aggregating data [ID_33927]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
