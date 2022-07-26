@@ -166,6 +166,12 @@ This has now been changed:
 
 Because of a number of enhancements, overall performance of the QA Device Simulator tool has improved.
 
+#### Failover: Enhanced performance of SLNet when communicating via NATS [ID_33807]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+On Failover systems, because of a number of enhancements, overall performance of SLNet has increased when communicating via NATS.
+
 #### SLLogCollector: Enhanced processing of SLProtocol memory dumps [ID_33932]
 
 <!-- Main Release Version 10.0.0 [CU22]/10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
@@ -380,6 +386,15 @@ During a DataMiner upgrade, the upgrade action *DeletePreRN28047CustomDataTempla
 <!-- Not added to 10.3.0 -->
 
 When you hover over a data table component (e.g. a GQI table), a search box will appear in the bottom-right corner. In some cases, the filter specified in that search box would incorrectly not be re-applied after a data refresh.
+
+#### An alarm property with a name identical to that of an element, service of view property would incorrectly get duplicated when the element with that alarm property was restarted [ID_34021]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When you created an alarm property with a name identical to an existing property of an element, service or view, that alarm property would incorrectly be duplicated each time the element with that alarm property was restarted.
+
+> [!NOTE]
+> When upgrading to v10.2.0 [CU6] or v10.2.9, an upgrade action will check the *PropertyConfiguration.xml* file for any issues with duplicate properties and correct them.
 
 #### Problem with SLSNMPManager when an SNMP Get or Set was put on the queue while the element in question was being stopped [ID_34038]
 

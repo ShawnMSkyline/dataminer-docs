@@ -86,6 +86,12 @@ When configuring a parameter in a protocol, you can add a `<Message>` element co
 
 In an HTTP session request, the order of the parameters will now always be identical to that in the protocol.
 
+#### Failover: Enhanced performance of SLNet when communicating via NATS [ID_33807]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+On Failover systems, because of a number of enhancements, overall performance of SLNet has increased when communicating via NATS.
+
 #### DVE function protocol version of active functions will now be deleted when the main DVE protocol version is deleted [ID_33834]
 
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
@@ -277,6 +283,15 @@ When an alarm of one the following types was generated, in some cases, that alar
 <!-- Main Release Version 10.0.0 [CU22]/10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 In some cases, SLSNMPManager could throw a StackOverflow exception while trying to resolve the next Request ID.
+
+#### An alarm property with a name identical to that of an element, service of view property would incorrectly get duplicated when the element with that alarm property was restarted [ID_34021]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When you created an alarm property with a name identical to an existing property of an element, service or view, that alarm property would incorrectly be duplicated each time the element with that alarm property was restarted.
+
+> [!NOTE]
+> When upgrading to v10.2.0 [CU6] or v10.2.9, an upgrade action will check the *PropertyConfiguration.xml* file for any issues with duplicate properties and correct them.
 
 #### DataMiner upgrade: Upgrade action 'DeletePreRN28047CustomDataTemplates' would fail when Elasticsearch required authentication [ID_34029]
 
