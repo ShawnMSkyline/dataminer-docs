@@ -136,3 +136,11 @@ When you created an alarm property with a name identical to an existing property
 <!-- Main Release Version 10.0.0 [CU22]/10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 In some rare cases, an error could occur in the SLSNMPManager process due to an SNMP Get or Set having been put on the queue while the element in question was being stopped.
+
+#### When a stopped element was deleted, its logger tables would incorrectly not be deleted if created with options="database" [ID_34067]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When a stopped element was deleted, logger tables associated with that element would incorrectly not be deleted if created with `options="database"`.
+
+

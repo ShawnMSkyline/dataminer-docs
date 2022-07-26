@@ -316,3 +316,9 @@ When, in a GQI table, you collapsed a group that contained a selected row, it wa
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 In some cases, it would no longer be possible to build a GQI query that filtered or aggregated data by custom properties.
+
+#### When a stopped element was deleted, its logger tables would incorrectly not be deleted if created with options="database" [ID_34067]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When a stopped element was deleted, logger tables associated with that element would incorrectly not be deleted if created with `options="database"`.

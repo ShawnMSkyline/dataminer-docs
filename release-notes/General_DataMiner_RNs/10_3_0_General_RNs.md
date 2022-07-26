@@ -24,10 +24,17 @@ uid: 10_3_0_General_RNs
 
 #### Service & Resource Management: Enhancements made to ResourceManagerHelper [ID_33993]
 
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
 A number of enhancements have been made to the ResourceManagerHelper class.
 
 For example, from now on, an ArgumentNullException will be thrown when a NULL argument is provided. Also, when a collection with one or more NULL objects is provided, those objects will be ignored.
 
 ### Fixes
 
+#### Jobs app: Corrected start time would be saved incorrectly [ID_34043]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+When, after receiving a message that it was not possible to save a job because of an invalid start time, you had corrected the start time and tried to save the job again, that start time would get saved incorrectly.
 

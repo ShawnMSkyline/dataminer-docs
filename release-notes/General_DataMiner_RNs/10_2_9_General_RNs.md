@@ -186,6 +186,8 @@ Because of a number of enhancements, overall performance of the SLSNMPManager pr
 
 #### Service & Resource Management: Enhancements made to ResourceManagerHelper [ID_33993]
 
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
 A number of enhancements have been made to the ResourceManagerHelper class.
 
 For example, from now on, an ArgumentNullException will be thrown when a NULL argument is provided. Also, when a collection with one or more NULL objects is provided, those objects will be ignored.
@@ -408,8 +410,28 @@ In some rare cases, an error could occur in the SLSNMPManager process due to an 
 
 When, in a GQI table, you collapsed a group that contained a selected row, it was no longer possible to select another row.
 
+#### Jobs app: Corrected start time would be saved incorrectly [ID_34043]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+When, after receiving a message that it was not possible to save a job because of an invalid start time, you had corrected the start time and tried to save the job again, that start time would get saved incorrectly.
+
 #### GQI: Problem when filtering or aggregating data by custom properties [ID_34058]
 
 <!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 In some cases, it would no longer be possible to build a GQI query that filtered or aggregated data by custom properties.
+
+#### When a stopped element was deleted, its logger tables would incorrectly not be deleted if created with options="database" [ID_34067]
+
+<!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When a stopped element was deleted, logger tables associated with that element would incorrectly not be deleted if created with `options="database"`.
+
+#### Web apps: Not possible to copy table data when working in Mozilla Firefox [ID_34075]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+When using the Dashboards app or a low-code app in Mozilla Firefox, it would incorrectly not be possible to copy table data by means of a right-click menu command.
+
