@@ -159,6 +159,18 @@ In order to prevent SLPort from running out of memory, from now on, the size of 
 
 When creating GQI queries, custom view, element, service and alarm properties that are marked as "read only" will now also be available.
 
+#### Web apps: Enhanced performance when retrieving booking information [ID_34072]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+Because of a number of enhancements, overall performance has increased when retrieving booking information in the Dashboards app and in low-code apps.
+
+#### Dashboards app: Enhanced performance when editing a dashboard containing GQI queries [ID_34096]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When, in the Dashboards app, you switched to edit mode, all columns of all GQI queries on the dashboard in question would be retrieved. From now, only when you open a specific query on the dashboard you are editing will the columns of that specific query be retrieved.
+
 ### Fixes
 
 #### SLLogCollector would become unresponsive when the name of the process or the path where the files had to be stored contained spaces [ID_33493]

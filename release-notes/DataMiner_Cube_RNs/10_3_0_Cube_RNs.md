@@ -11,13 +11,46 @@ uid: 10_3_0_Cube_RNs
 
 ## Other new features
 
-### Automation app: Casing of a script name can now be changed [ID_33988]
+#### Automation app: Casing of a script name can now be changed [ID_33988]
 
 <!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
 
 In the Automation app, it is now possible to change the casing of a script name.
 
 Also, if you change the casing of a script name that was selected, it will remain selected. 
+
+#### Visual Overview - Conditional shape manipulation: Using statistics in the condition when the shape is linked to an EPM object [ID_34026]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+When applying conditional shape manipulation actions to a shape, up to now, it was only possible to use statistics in the condition if the shape was linked to an element, a service or a view. From now on, you can also use statistics in the condition when the shape is linked to an EPM object.
+
+Example in which both the SystemName and the SystemType are linked:
+
+```txt
+<A>-A|SystemType= Cable;SystemName=SF Cable1|#TotalAlarms|>0
+```
+
+Supported statistics:
+
+- #TotalAlarms
+- #CriticalAlarms
+- #MajorAlarms
+- #MinorAlarms
+- #WarningAlarms
+- #NormalAlarms
+- #TimeoutAlarms
+- #NoticeAlarms
+- #ErrorAlarms
+
+Supported operators:
+
+- =
+- !=
+- >
+- >=
+- <
+- <=
 
 ## Changes
 

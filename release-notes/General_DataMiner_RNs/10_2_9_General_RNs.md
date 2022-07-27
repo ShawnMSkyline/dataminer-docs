@@ -225,9 +225,15 @@ When creating GQI queries, custom view, element, service and alarm properties th
 
 #### Web apps: Enhanced performance when retrieving booking information [ID_34072]
 
-<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 Because of a number of enhancements, overall performance has increased when retrieving booking information in the Dashboards app and in low-code apps.
+
+#### Dashboards app: Enhanced performance when editing a dashboard containing GQI queries [ID_34096]
+
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
+
+When, in the Dashboards app, you switched to edit mode, all columns of all GQI queries on the dashboard in question would be retrieved. From now, only when you open a specific query on the dashboard you are editing will the columns of that specific query be retrieved.
 
 ### Fixes
 
@@ -448,3 +454,17 @@ When you tried to edit a published low-code app, in some cases, no new draft ver
 
 When using the Dashboards app or a low-code app in Mozilla Firefox, it would incorrectly not be possible to copy table data by means of a right-click menu command.
 
+#### DataMiner upgrade: AnalyticsDropUnusedCassandraTables upgrade action would fail [ID_34091]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+During a DataMiner upgrade, in some cases, the *AnalyticsDropUnusedCassandraTables* upgrade action would fail.
+
+#### GQI queries: Problem when removing a query used as 'start from' query [ID_34093]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+In some cases, an exception could be thrown when removing a query that was used as "start from" query by another query.
+
+From now on, when you try to remove a query that is used as "start from" query, a confirmation box will appear, asking you to confirm the removal of that query. 
