@@ -30,6 +30,12 @@ A number of enhancements have been made to the ResourceManagerHelper class.
 
 For example, from now on, an ArgumentNullException will be thrown when a NULL argument is provided. Also, when a collection with one or more NULL objects is provided, those objects will be ignored.
 
+#### Web apps: Enhanced performance when retrieving booking information [ID_34072]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+Because of a number of enhancements, overall performance has increased when retrieving booking information in the Dashboards app and in low-code apps.
+
 ### Fixes
 
 #### Jobs app: Corrected start time would be saved incorrectly [ID_34043]

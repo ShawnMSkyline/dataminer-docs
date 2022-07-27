@@ -223,6 +223,12 @@ In order to prevent SLPort from running out of memory, from now on, the size of 
 
 When creating GQI queries, custom view, element, service and alarm properties that are marked as "read only" will now also be available.
 
+#### Web apps: Enhanced performance when retrieving booking information [ID_34072]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+
+Because of a number of enhancements, overall performance has increased when retrieving booking information in the Dashboards app and in low-code apps.
+
 ### Fixes
 
 #### SLLogCollector would become unresponsive when the name of the process or the path where the files had to be stored contained spaces [ID_33493]
@@ -427,6 +433,13 @@ In some cases, it would no longer be possible to build a GQI query that filtered
 <!-- Main Release Version 10.1.0 [CU18]/10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 When a stopped element was deleted, logger tables associated with that element would incorrectly not be deleted if created with `options="database"`.
+
+#### Low-code apps: No new draft version could be created when trying to edit an app [ID_34075]
+
+<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
+<!-- Not added to 10.3.0 -->
+
+When you tried to edit a published low-code app, in some cases, no new draft version could be created.
 
 #### Web apps: Not possible to copy table data when working in Mozilla Firefox [ID_34075]
 
