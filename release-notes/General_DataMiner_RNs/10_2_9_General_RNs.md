@@ -462,8 +462,7 @@ During a DataMiner upgrade, in some cases, the *AnalyticsDropUnusedCassandraTabl
 
 #### GQI queries: Problem when removing a query used as 'start from' query [ID_34093]
 
-<!-- Main Release Version 10.3.0 - Feature Release Version 10.2.9 -->
-<!-- Not added to 10.3.0 -->
+<!-- Main Release Version 10.2.0 [CU6] - Feature Release Version 10.2.9 -->
 
 In some cases, an exception could be thrown when removing a query that was used as "start from" query by another query.
 
