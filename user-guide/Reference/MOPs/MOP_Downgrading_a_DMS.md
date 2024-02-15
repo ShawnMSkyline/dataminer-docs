@@ -43,6 +43,8 @@ For remote database clusters, please follow the **in-house procedures** to roll 
    1. Wait for the downgrade to have "completed". The upgrade status will keep showing "Starting up (xx%)" at this stage.
 
    1. [Stop the DataMiner Software](xref:Starting_or_stopping_a_DMA_using_DataMiner_Taskbar_Utility).
+   
+      1. Validate the SLDataminer service is disabled to prevent premature automated startup.
 
    1. Open the Windows *Add or remove programs* window.
 
