@@ -62,6 +62,7 @@ For remote database clusters, please follow the **in-house procedures** to roll 
 
 > [!NOTE]
 > If you need to go back several major DataMiner versions, e.g. from DataMiner 10.2.0 to DataMiner 9.6.0, we recommend downloading a package for every major version you are downgrading to. For example, to downgrade from DataMiner 10.2.0 to DataMiner 9.6.0, you will need a package for 9.6.0, 10.0.0, and 10.1.0. You will then first need to install DataMiner 10.1.0, then DataMiner 10.0.0, and then DataMiner 9.6.0 to complete the downgrade.
+> [!NOTE] Depending on the dataminer version you plan to downgrade, you might need to re-evaluate the required .NET versions for that build otherwise the ModuleInstallers might not install successfully. 
 
 ## Time estimate
 
