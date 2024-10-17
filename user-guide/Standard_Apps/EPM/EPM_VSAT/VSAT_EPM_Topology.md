@@ -9,7 +9,7 @@ The EPM topology navigation menu can be used to access the collector elements' m
 ![Topology](~/user-guide/images/VSAT_EPM_Topology.png)<br>
 *Topology navigation menu in DataMiner Cube (version 10.2.10)*
 
-## Topology chain
+## Topology chains
 
 Below you can find an overview of the different chains the VSAT EPM Solution offers, which can be accessed in the *Topology* tree, and the subsequent entities available in each branch.
 
@@ -17,7 +17,6 @@ Below you can find an overview of the different chains the VSAT EPM Solution off
 *Topology tree in DataMiner Cube (version 10.2.10)*
 
 - **Network**:
-
   - Network
   - Teleport
   - Hub Network
@@ -25,15 +24,7 @@ Below you can find an overview of the different chains the VSAT EPM Solution off
   - Hub Forward
   - Circuit
 
-- **Service**:
-
-  - Network
-  - Customer
-  - Customer/NMS
-  - Circuit
-
 - **NMS**:
-
   - Network
   - NMS
   - Hub Network
@@ -41,21 +32,11 @@ Below you can find an overview of the different chains the VSAT EPM Solution off
   - Hub Forward
   - Circuit
 
-- **Map**:
-
-  - Network
-  - NMS
-  - Customer
-  - Customer/NMS
-  - Circuit
-
 - **Quick**:
-
   - Type
   - Network
 
 - **Infrastructure**:
-
   - NMS
   - PP Server
   - Chassis
